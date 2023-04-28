@@ -30,13 +30,14 @@ li {
 }
 
 .home__section {
-   padding: 4.6rem;
-  background-image: url("https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg");
-  background-repeat: no-repeat;
+  padding: 4.6rem;
+  /* background-image: url("https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"); */
+  background-image: url("https://media.istockphoto.com/id/1349615972/photo/contemporary-classic-white-beige-interior-with-sofa-and-decor-3d-render-illustration-mockup.jpg?s=170667a&w=0&k=20&c=BdA49L9zCHGYuFPYTqAWrvKQVlm6OUiuwQHl-ylVaPE=");
   background-size: cover;
- background-position: center;
- background-attachment: fixed;
-  
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -54,6 +55,7 @@ header {
 .navbar ul {
   display: flex;
   justify-content: space-evenly;
+  font-weight: 600;
 }
 
 .connect {
@@ -62,21 +64,20 @@ header {
 
 .about {
   margin-top: 4rem;
+  width: 55%;
 }
 
 .about__heading {
-  width: 55%;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 1.2rem;
   line-height: 1.5;
 }
 
 .about__description {
-  width: 50%;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding-bottom: 1rem;
 }
 
@@ -85,5 +86,4 @@ header {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
- 
 }
