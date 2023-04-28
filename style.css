@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;600;800&display=swap");
+
+/* font-family: 'Cormorant Garamond', serif;
+  font-family: 'Inter', sans-serif;
+
+ Cormorant Garamond 400 500 600 700
+            Inter  400 600 800 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-peach: #ffd384;
+  --Mustard: #ffc54d;
+  --Light-violet-blue: #e5e0ff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+.home__section {
+   padding: 4.6rem;
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+  
+}
+
+header {
+  font-family: "Cormorant Garamond", serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.connect {
+  font-weight: 600;
+}
+
+.about {
+  margin-top: 4rem;
+}
+
+.about__heading {
+  width: 55%;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.about__description {
+  width: 50%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.shop-btn {
+  background-color: var(--Mustard);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+ 
+}
