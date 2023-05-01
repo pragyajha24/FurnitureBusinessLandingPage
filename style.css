@@ -15,13 +15,19 @@
 :root {
   --Light-peach: #ffd384;
   --Mustard: #ffc54d;
-  --Light-violet-blue: #eceafb;
+  /* --Light-violet-blue: #eceafb; */
+   --Light-violet-blue: #edeef6;
 }
 
 a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  cursor: pointer;
+}
+
+a:hover {
+  font-size: 1.6rem;
 }
 
 li {
@@ -36,10 +42,10 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-position:center;
+  background-position: center;
   /* background-attachment: fixed; */
-  width:100%;
-  height:100vh;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -53,25 +59,28 @@ header {
 .logo {
   font-size: 2rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .navbar ul {
   display: flex;
   justify-content: space-evenly;
   font-weight: 600;
-  font-size:1.4rem;
+  font-size: 1.4rem;
 }
 
 .connect {
   font-weight: 600;
   /* font-size:1.4rem; */
+  cursor: pointer;
+}
+cursor p:hover {
+  font-size: 1.6rem;
 }
 
 .about {
   margin-top: 8rem;
   width: 55%;
-  
-
 }
 
 .about__heading {
@@ -86,7 +95,6 @@ header {
   font-weight: 500;
   font-size: 1.5rem;
   padding-bottom: 1rem;
-  
 }
 
 .shop-btn {
@@ -95,58 +103,151 @@ header {
   border: none;
   border-radius: 0.5rem;
   font-weight: 500;
-  font-size:1rem;
-  
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px var(--Light-peach);
 }
 
+.shop-btn:hover {
+  background-color: white;
+  color: var(--Mustard);
+  font-size: 1.3rem;
+  font-weight: 700;
+  box-shadow: 10px 5px 5px black;
+}
 
 /* ADVANTAGES SECTION */
-.advantages__section{
+.advantages__section {
   overflow: hidden;
-  min-height:100px;
+  min-height: 100px;
   background-color: var(--Light-violet-blue);
-  padding:5rem 8rem;
+  padding: 6.3rem 10rem 8rem;
 }
 
-.advantages__heading{
-  font-family: 'Cormorant Garamond', serif;
+.advantages__heading {
+  font-family: "Cormorant Garamond", serif;
   font-weight: 700;
-  font-size:2.3rem;
- 
+  font-size: 2.3rem;
+
   text-align: center;
 }
 
-.advantages__content{
-  font-family: 'Inter', sans-serif;
-  margin-top:2.3rem;
+.advantages__content {
+  font-family: "Inter", sans-serif;
+  margin-top: 2.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size:1.2rem;
+  font-size: 1.4rem;
 }
 
-.advantage__icon{
-  color:black;
-  font-size:3rem;
+.advantage__icon {
+  color: black;
+  font-size: 3rem;
   font-weight: 900;
 }
 
-.description{
-  padding:5rem 8rem;
-  display:flex;
-  align-items: center;
+/* about company */
+
+.description {
+  padding: 7rem 10rem;
+  display: flex;
+  /* align-items: center; */
   justify-content: space-between;
   background-color: white;
-
 }
 
-.description__left{
-  display:flex;
+.description__left {
+  display: flex;
   flex-direction: column;
 }
 
-.description__left-bottom{
-  display:flex;
+.description__left-top {
+  width: 90%;
+}
+
+.description__left-top h4 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.description__left-top p {
+  margin-top: 2.3rem;
+  font-size: 1.2rem;
+  margin-right: 2rem;
+  line-height: 1.8rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.description__left-bottom {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5rem;
+  padding: 4rem;
+  margin-right: 1rem;
+
+  background-color: var(--Light-peach);
+}
+
+.description__image {
+  width: 25rem;
+  height: 36.5rem;
+}
+
+.first-desc-heading,
+.second-desc-heading,
+.third-desc-heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.first-desc,
+.second-desc,
+.third-desc {
+  padding-right: 2rem;
+}
+
+.first-desc-content,
+.second-desc-content,
+.third-desc-content {
+  margin-top: 1.2rem;
+  line-height: 1.4rem;
+}
+
+/* product gallery */
+.gallery-image{
+  height:400px;
+  width:400px;
+  border-radius: .5rem;
+}
+
+.gallery-grid{
+  margin:2rem 9rem;
+  display:grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap:1rem;
+}
+
+.review-section{
+   margin:6rem 9rem;
+}
+
+.review-top{
+  text-align: center;
+
+}
+
+.review-top h4{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  
+}
+
+.review-top p{
+  font-family: 'Inter', sans-serif;
+  
 }
